@@ -50,7 +50,7 @@ void addnode(stack_t **head, int n)
 	{ printf("Error\n");
 		exit(0); }
 	if (a)
-		aux->prev = new_node;
+		a->prev = new_node;
 	new_node->n = n;
 	new_node->next = *head;
 	new_node->prev = NULL;
